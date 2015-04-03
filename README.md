@@ -6,3 +6,5 @@ is made via random permutations.
 
 **confidence_interval.R** The definition of a confidence interval is explained by taking multiple random samples
 from a normally distributed population.
+
+**sampling_dist** Visualization of the Central Limit Theorem for the sampling distribution of the mean.
