@@ -19,7 +19,7 @@ shinyServer(function(input, output) {
         # Want 100 confidence intervals total
         samps <- replicate(100, sample(population, input$n))
         samp_means <- apply(samps, 2, mean)
-        se_mean <- apply(samps, 2, FUN=function(x) sd(x)/sqrt(n)) *
+        se_mean <- apply(samps, 2, FUN=function(x) sd(x)/sqrt(input$n)) *
             abs(qt((1 - input$conf.lvl / 100) / 2, df=input$n - 1))
         conf_data <- data.frame(samp_means,
                                 LL=samp_means - se_mean,
