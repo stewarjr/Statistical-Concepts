@@ -8,3 +8,7 @@ is made via random permutations.
 from a normally distributed population.
 
 **sampling_dist** Visualization of the Central Limit Theorem for the sampling distribution of the mean.
+
+**confidence** An interactive approach for defining confidence by taking many random samples from a normally distributed population using Shiny.
+
+*In R, input the following to run ***confidence**: shiny::runGitHub("Statistical-Concepts", "stewarjr", subdir="confidence")
